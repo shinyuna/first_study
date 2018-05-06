@@ -1,0 +1,124 @@
+/*style.css*/
+body{margin :0;}
+.wrap{margin: 0 auto;  width: 940px; min-height: 500px;}
+header{width: 100%; height: 500px; position: relative; overflow: hidden; }
+header > img {
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	left: -1000px;
+	top: 0;
+}
+ header > img:first-child{
+	left: 0;
+}
+
+nav{
+	z-index: 999;
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+nav ul{
+	list-style: none;
+	margin : 0;
+	padding: 0;
+}
+nav > ul > li {
+	width: 150px;
+	height: 50px;
+	float: left;
+}
+nav > ul > li:hover a{
+	text-decoration: underline;
+}
+nav > ul > li:hover ul>li>a{
+	text-decoration: none;
+}
+nav > ul > li >a{
+	display :block;
+	width: 150px;
+	height: 50px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sub{
+	display: none;
+	z-index: 999;
+}
+
+.sub > li{
+	width: 100px;
+	height: 50px;
+	background-color: #000;
+	opacity:0.9;
+	margin:0 auto; 
+}
+.sub > li > a{
+	display: block;
+	width: 100px;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+.sub > li:hover{
+	text-decoration: underline;
+}
+nav > ul > li:hover ul{
+	display: block;
+	height: 50px;
+}
+
+.contnets{
+	clear: both;
+	width: 100%;
+}
+.contents > div {
+	float: left;
+	min-height: 300px;
+}
+.left{
+	width: 635px;
+	margin-right: 5px;
+	
+}
+.right{
+	width: 300px;
+
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+}
+section{clear:both; width: 100%; margin-top: 20px; margin-bottom: 20px;}
+
+.pop>div{
+	float: left;
+	width: 33.3333%;
+	height: 250px;
+	overflow: hidden;
+	text-align: center; 
+}
+.pop > div > h3 , .pop > div > p {text-align: center; }
+.pop > div > h3{margin: 5px 0;}
+.pop >div > img:hover{animation:popani 1s;}
+@keyframes popani{
+	from{
+		transform: :rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

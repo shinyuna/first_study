@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML - 1</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 이런식으로도 가능하다<script>
+
+	window.onload = function(){
+		var obj = document.getElementById("mysection");
+	obj.innerHTML = "<h1>HI</h1>";}; 
+	</script> -->
+</head>
+<body>
+	<div class="wrap">
+		<nav>
+			<ul>
+				<li>
+					<a href="#">top</a>
+					<ul class="sub">
+						<li><a href="#">tee</a></li>
+						<li><a href="#">knit</a></li>
+						<li><a href="#">blouse</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">bottom</a>
+					<ul class="sub">
+						<li><a href="#">skirt</a></li>
+						<li><a href="#">pants</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#">outer</a>
+					<ul class="sub">
+						<li><a href="#">jacket</a></li>
+						<li><a href="#">coat</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#">acc</a>
+					<ul class="sub">
+						<li><a href="#">hat</a></li>
+						<li><a href="#">bag</a></li>
+						<li><a href="#">socks</a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#">dress</a>
+					<ul class="sub">
+						<li><a href="#">long</a></li>
+						<li><a href="#">mini</a></li>
+					</ul>					
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<img src="images/raskal.PNG" alt="raskal" width="1000" height="300">
+			<img src="images/coat.PNG" alt="coat" width="1000" height="300">
+			<img src="images/celeb_top.jpg" alt="celeb_top" width="1000" height="300">
+			<img src="images/prodown_top.jpg" alt="prodown_top" width="1000" height="300">
+			<img src="images/nut.PNG" alt="nut" width="1000" height="300">
+		</header>
+		<div class="contents">
+			<div class="left">
+				<section class="pop">
+					<div class="raskal">
+						<img src="images/t.jpg" width="200" height="250" alt="raskal">
+					</div>
+					<div>
+						<img src="images/down.jpg" width="200" height="250" alt="down">
+					</div>
+					<div>
+						<img src="images/oi.jpg" width="200" height="250" alt="oi">
+					</div>
+				</section>
+				<!-- <section id="mysection"> </section> -->
+			</div>
+			<div class="right">
+				<section>
+					<iframe width="300" height="250" src="https://www.youtube.com/embed/33PbGlR-aXU" frameborder="0" allowfullscreen></iframe>
+				</section>
+				<section>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8718028732173!2d126.92334491556488!3d37.55808403236929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98c2efb71513%3A0xb48a2ab78d62a1f1!2z7ZmN64yA7J6F6rWs7Jet!5e0!3m2!1sko!2skr!4v1480403851271" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</div>
+		</div>
+		<footer>
+			&copy; 2016 by 신유나 All rights reserved.
+		</footer>
+	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
